@@ -1,0 +1,245 @@
+* {
+    color: white;
+    font: 13.6px "helvetica neue", arial, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: #202020;
+}
+
+#Header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 3px rgb(0 0 0 / 25%);
+    background-color: #4d97ff;
+    width: 100%;
+    height: 50px;
+}
+
+#innerHeader {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#ScratchLogo {
+    display: inline-block;
+    transition: .15s ease all;
+    margin: 0 6px 0 0;
+    border: 0;
+    background-image: url("https://scratch.mit.edu/static/assets/1e9652bec24bcaacf5285be19746a750.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 95%;
+    width: 81px;
+    height: 50px;
+}
+
+    #ScratchLogo:hover {
+        transition: .15s ease all;
+        background-size: 100%;
+        vertical-align: middle;
+    }
+
+.inline-block {
+    display: inline-block;
+}
+
+.center-text {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+#search {
+    margin: 5px 20px;
+    display: inline-block;
+    position: relative;
+}
+
+#searchIcon {
+    width: 40px;
+    height: 40px;
+    border-right: none;
+    background: url(https://scratch.mit.edu/images/nav-search-glass.png) no-repeat center center;
+    background-size: 14px 14px;
+    position: absolute;
+}
+
+#search input {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: inherit;
+    color: #fff;
+    box-shadow: none;
+    transition: .15s ease background-color;
+    padding-left: 40px;
+    border: none;
+    outline: none;
+    font-weight: normal;
+}
+    #search input:focus {
+        transition: .15s ease background-color;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        outline: none;
+    }
+
+    #search input::placeholder {
+        color: rgba(255,255,255,.75);
+    }
+
+.project {
+    height: 208px;
+    margin: 7px;
+    border-radius: 4px;
+    background: #282828;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+    padding-bottom: 4px;
+    width: 220px;
+}
+
+#ModLoaders {
+    padding-top: 50px;
+}
+
+.project {
+    display: inline-block;
+}
+
+.thumbnail-image {
+    height: 152px;
+    margin: 8px auto;
+    width: 204px;
+    display: block;
+    cursor: pointer;
+}
+    .thumbnail-image[disabled] {
+        cursor: not-allowed;
+    }
+
+    .thumbnail-image img {
+        margin: 0 auto;
+        border: 0;
+        border-radius: 4px;
+        width: 204px;
+        height: 152px;
+    }
+
+        .thumbnail-image img[disabled] {
+            opacity: 0.5;
+        }
+
+.thumbnail-info a {
+    float: left;
+}
+.thumbnail-info {
+    margin: 0 auto;
+    width: 204px;
+    height: 100%;
+}
+.thumbnail-info a img {
+    margin-right: 8px;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+}
+.thumbnail-title {
+    float: left;
+    max-width: 164px;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+}
+    .thumbnail-info a:hover {
+        text-decoration: none;
+    }
+    .thumbnail-info a:link {
+        text-decoration: none;
+    }
+    .thumbnail-info a:visited {
+        text-decoration: none;
+    }
+    .thumbnail-info a:active {
+        text-decoration: none;
+    }
+
+.title {
+    color: #4d97ff;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+    .title[disabled] {
+        cursor: not-allowed;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .title:hover {
+        color: #4280d7;
+    }
+
+.username {
+    font-size: .8462em;
+    color: #fff;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#contextMenu {
+    position: absolute;
+    z-index: 99999;
+}
+
+    #contextMenu ul {
+        background: #111;
+        border-color: #ffffff26;
+        border-style: solid;
+        border-width: 1px;
+        cursor: default;
+        font: normal 13px "Helvetica Neue", Helvetica, sans-serif;
+        margin: 0;
+        outline: none;
+        padding: 4px 0;
+        position: absolute;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 20000;
+        border-radius: 4px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+        #contextMenu ul li {
+            margin: 0;
+            padding: 4px 7em 4px 28px;
+        }
+
+            #contextMenu ul li, #contextMenu ul li a {
+                color: #eee;
+                font: normal 13px "Helvetica Neue", Helvetica, sans-serif;
+                list-style: none;
+                white-space: nowrap;
+                font-weight: normal;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+                #contextMenu ul li:hover {
+                    background-color: #2e2e2e;
+                }
