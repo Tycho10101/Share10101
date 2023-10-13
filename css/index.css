@@ -30,14 +30,13 @@ body {
 #ScratchLogo {
     display: inline-block;
     transition: .15s ease all;
-    margin: 0 3px 0 0;
     border: 0;
     background-image: url("https://tycho10101.github.io/Share10101/Logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 95%;
+    width: 115px;
     height: 50px;
-    width: auto:
 }
 
     #ScratchLogo:hover {
