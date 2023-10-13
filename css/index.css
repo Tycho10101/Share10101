@@ -16,7 +16,7 @@ body {
     z-index: 10;
     border-bottom: 1px solid rgba(0,0,0,.1);
     box-shadow: 0 0 3px rgb(0 0 0 / 25%);
-    background-color: #4d97ff;
+    background-color: #855CD6;
     width: 100%;
     height: 50px;
 }
@@ -32,7 +32,7 @@ body {
     transition: .15s ease all;
     margin: 0 6px 0 0;
     border: 0;
-    background-image: url("https://scratch.mit.edu/static/assets/1e9652bec24bcaacf5285be19746a750.svg");
+    background-image: url("https://tycho10101.github.io/Share10101/Logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 95%;
@@ -178,7 +178,7 @@ body {
     }
 
 .title {
-    color: #4d97ff;
+    color: #CCB3FF;
     cursor: pointer;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -191,15 +191,19 @@ body {
     }
 
     .title:hover {
-        color: #4280d7;
+        color: #9D8AC2;
     }
 
 .username {
     font-size: .8462em;
-    color: #fff;
-    margin: 2px;
+    color: #CCB3FF;
+    margin: 1px;
     text-decoration: none;
 }
+    .username:hover {
+        color: #9D8AC2
+    }
+
 
 #contextMenu {
     position: absolute;
