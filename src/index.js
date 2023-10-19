@@ -30,7 +30,7 @@
                     <a href="https://tycho10101.github.io/Share10101/${data.id}/">
                         <div class="title">${data.title}</div>
                     </a>
-                    <a class="username" target="_blank" href="https://scratch.mit.edu/users/${data.author}/">${data.author}</a>
+                    <div class="username" target="_blank" href="https://scratch.mit.edu/users/${data.author}/">${data.author}</div>
                 </div>
             </div>
         `;
